@@ -57,7 +57,7 @@ class HotelController extends Controller
         $hotel = hotel::findOrFail($id);
         $hotel->delete();
         return response() ->json([
-            'status' => "Success deleted khs"
+            'status' => "Success deleted"
         ]); 
     }
 }
